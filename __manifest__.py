@@ -2,20 +2,30 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 {
-    'name': 'RAK POS Custom',
+    'name': 'POS Tax toggler',
     'version': '1.0',
     'category': 'Sales/Point of Sale',
-    'summary': 'POS manual price tax inclusion',
+    'summary': 'Toggle between tax-included and tax-excluded manual prices instantly',
+    'description': """
+POS Tax Toggler
+===============
+Instantly switch between Tax Included and Tax Excluded calculations for manual price entries in the Point of Sale.
+    """,
+    'author': 'Muhammed Anas P A',
+    'website': 'https://odoocrafts.com',
+    'price': 15.0,
+    'currency': 'EUR',
+    'license': 'OPAL-1',
+    'images': ['static/description/banner.png'],
     'depends': ['point_of_sale'],
     'data': [],
     'assets': {
         'point_of_sale._assets_pos': [
-            'RAK/static/src/app/pos_order_line.js',
-            'RAK/static/src/app/tax_toggle_button.xml',
-            'RAK/static/src/app/tax_toggle_button.js',
+            'pos_tax_toggle/static/src/app/pos_order_line.js',
+            'pos_tax_toggle/static/src/app/tax_toggle_button.xml',
+            'pos_tax_toggle/static/src/app/tax_toggle_button.js',
         ],
     },
     'installable': True,
     'application': False,
-    'license': 'LGPL-3',
 }
