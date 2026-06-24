@@ -15,7 +15,7 @@ Instantly switch between Tax Included and Tax Excluded calculations for manual p
     'website': 'https://odoocrafts.com',
     'price': 15.0,
     'currency': 'EUR',
-    'license': 'OPAL-1',
+    'license': 'OPL-1',
     'images': ['static/description/banner.png'],
     'depends': ['point_of_sale'],
     'data': [],
