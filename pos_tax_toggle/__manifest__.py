@@ -11,7 +11,7 @@ POS Tax Toggler
 ===============
 Instantly switch between Tax Included and Tax Excluded calculations for manual price entries in the Point of Sale.
     """,
-    'author': 'Muhammed Anas P A',
+    'author': 'Odoocrafts Innovations',
     'website': 'https://odoocrafts.com',
     'price': 15.0,
     'currency': 'EUR',
