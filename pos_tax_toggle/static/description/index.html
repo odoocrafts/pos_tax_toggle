@@ -29,6 +29,63 @@
     </div>
 </section>
 
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h3 class="oe_slogan" style="color:#000000;">Frequently Asked Questions (FAQ)</h3>
+        
+        <div class="accordion" id="faqAccordion">
+            <!-- FAQ 1 -->
+            <div class="card" style="margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                <div class="card-header" id="headingOne" style="background-color: #f8f9fa;">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link text-left" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="width: 100%; color: #333; text-decoration: none; font-weight: bold;">
+                            How does this module improve Odoo POS tax configuration?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="card-body" style="padding: 15px;">
+                        By default, Odoo Point of Sale limits your manual price entries to either strictly tax included or tax excluded based on the company's fiscal settings. The <strong>POS Tax Toggler</strong> app allows cashiers to instantly switch between modes using a convenient UI toggle switch. This is incredibly useful for retail environments in regions like the UAE (VAT) or Europe, where some customers expect B2B (tax excluded) pricing and others expect B2C (tax included) pricing.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="card" style="margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                <div class="card-header" id="headingTwo" style="background-color: #f8f9fa;">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link text-left collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="width: 100%; color: #333; text-decoration: none; font-weight: bold;">
+                            Does the toggle recalculate the price instantly?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="card-body" style="padding: 15px;">
+                        Yes! As soon as you flip the switch from <strong>Tax Included</strong> to <strong>Tax Excluded</strong>, the Point of Sale line recalculates the exact base price and tax breakdown in real-time. It seamlessly handles rounding accuracy using your Odoo currency decimal places to prevent penny rounding errors.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="card" style="margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                <div class="card-header" id="headingThree" style="background-color: #f8f9fa;">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link text-left collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="width: 100%; color: #333; text-decoration: none; font-weight: bold;">
+                            Which Odoo versions is POS Tax Toggler compatible with?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="card-body" style="padding: 15px;">
+                        This module is fully compatible with the new Owl framework used in modern Odoo Point of Sale versions (Odoo 17, 18, and 19). It integrates natively without heavy overrides, ensuring flawless compatibility with other POS apps.
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
 <section class="oe_container oe_dark">
     <div class="oe_row oe_spaced text-center">
         <div class="oe_span12">
