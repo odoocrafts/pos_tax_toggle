@@ -11,6 +11,10 @@ patch(PosOrderline.prototype, {
             this.config.manual_price_tax_included = true;
         }
 
+        // Save the original input price before any tax extractions.
+        // This prevents the unit price from spiraling down when discounts are applied.
+        this.original_input_price = price;
+
         if (this.config.manual_price_tax_included) {
             const tax_ids = this.tax_ids;
             if (tax_ids && tax_ids.length > 0) {

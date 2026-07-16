@@ -26,11 +26,10 @@ export class TaxToggleModeButton extends Component {
         if (order) {
             selectedLine = order.getSelectedOrderline();
             if (selectedLine) {
-                if (wasIncluded) {
-                    currentTargetPrice = selectedLine.unitPrices?.total_included ?? selectedLine.price_unit;
-                } else {
-                    currentTargetPrice = selectedLine.price_unit;
-                }
+                // Fetch the original price inputted to avoid discounting it multiple times
+                currentTargetPrice = selectedLine.original_input_price !== undefined 
+                                     ? selectedLine.original_input_price 
+                                     : selectedLine.price_unit;
             }
         }
 
